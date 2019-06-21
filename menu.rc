@@ -1,0 +1,39 @@
+#include "menu.h"
+
+MY_MENU MENU
+
+	BEGIN
+	POPUP "&File"
+	BEGIN
+        MENUITEM "&Save", Save_ID
+        MENUITEM "&Load", Load_ID
+		MENUITEM "&Close", Exit_ID
+	END
+
+	POPUP "&Line"
+	BEGIN
+		MENUITEM "&LineParametric", LineParametric_ID
+		MENUITEM "&LineDDA", LineDDA_ID
+		MENUITEM "&LineMidPoint", LineMidPoint_ID
+	END
+
+	POPUP "&Ellipse"
+	BEGIN
+        MENUITEM "&EllipseDirect", EllipseDirect_ID
+        MENUITEM "&EllipsePolar", EllipsePolar_ID
+        MENUITEM "&EllipseMidPoint", EllipseMidPoint_ID
+	END
+
+	POPUP "&Clipping"
+	BEGIN
+		MENUITEM "&PolygonClipping", PolygonClipping_ID
+	END
+
+	POPUP "&Curves"
+    BEGIN
+        MENUITEM "&Bezier", Bezier_ID
+        MENUITEM "&Hermite", Hermite_ID
+		MENUITEM "&Splines", Splines_ID
+	END
+
+END
